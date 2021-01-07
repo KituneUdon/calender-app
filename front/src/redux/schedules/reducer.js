@@ -3,15 +3,7 @@ import dayjs from "dayjs";
 import { SCHEDULES_ADD_ITEM } from "./actions";
 
 const init = {
-  items: [
-    {
-      id: 1,
-      title: "テスト",
-      date: dayjs(),
-      location: "会議室",
-      description: "経営戦略について"
-    }
-  ],
+  items: [],
   isLoading: false
 };
 
