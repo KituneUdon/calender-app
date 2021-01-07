@@ -7,7 +7,6 @@ import {
   addScheduleSetValue
 } from "../../redux/addSchedule/actions";
 import { setSchedules } from "../../services/schedule";
-import { months } from "dayjs/locale/*";
 
 const mapStateToProps = state => ({
   calendar: state.calendar,
@@ -23,8 +22,8 @@ const mapDispatchToProps = dispatch => ({
 
 const mergeProps = (stateProps, dispatchProps) => {
   const {
-    calendar: months,
-    schedules: { item: schedules }
+    calendar: month,
+    schedules: { items: schedules }
   } = stateProps;
 
   const calendar = setSchedules(createCalendar(month), schedules);
